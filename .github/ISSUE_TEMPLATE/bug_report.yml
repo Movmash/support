@@ -1,0 +1,72 @@
+name: 🐞 Bug Report
+description: Report a problem or unexpected behaviour in Movmash
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug! Your feedback helps improve Movmash 💙
+
+  - type: textarea
+    id: what_happened
+    attributes:
+      label: What happened?
+      description: Tell us what went wrong.
+      placeholder: The video stopped syncing when the host paused...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+      placeholder: Everyone should have paused at the same time.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Help us reproduce the issue.
+      placeholder: |
+        1. Create a sync room
+        2. Add a YouTube link
+        3. Invite a friend
+        4. Press play
+    validations:
+      required: true
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser & Version
+      placeholder: Chrome 121, Firefox 120
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: Operating System
+      placeholder: macOS, Windows, Linux, Android, iOS
+    validations:
+      required: true
+
+  - type: dropdown
+    id: room_type
+    attributes:
+      label: Room Type
+      options:
+        - Sync Mode
+        - Stream Mode (Files)
+        - Stream Mode (Screen Share)
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional information
+      description: Screenshots, logs, or anything else helpful.
