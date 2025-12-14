@@ -1,0 +1,31 @@
+name: ✨ Feature Request
+description: Suggest a new idea or improvement
+title: "[Feature]: "
+labels: ["feature-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        We love new ideas! Thanks for helping shape Movmash 🚀
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      placeholder: It’s hard to know who reacted most during a movie...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      placeholder: Add reaction counters or highlights.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      placeholder: Using chat messages instead...
